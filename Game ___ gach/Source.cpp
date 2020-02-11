@@ -15,7 +15,8 @@ void main() {
 	NoCursorType();
 	shelf aa;
 	brick bb;
-	Ball ball;
+	wall cc;
+	cc.display();
 	aa.initialize();
 	bb.initialize();
 
@@ -30,8 +31,8 @@ void main() {
 
 	thread t1(thread_func, ref(aa));
 	HANDLE handle_t1 = t1.native_handle();
-	//bb.read_map();
-	//bb.display();
+	bb.read_map();
+	bb.display();
 	while (1) {
 		ball.draw();
 		Sleep(50);
@@ -39,5 +40,4 @@ void main() {
 		ball.handle();
 		
 	}
-
 }
