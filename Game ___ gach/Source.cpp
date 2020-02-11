@@ -5,6 +5,8 @@ void main() {
 	noCursorType();
 	shelf aa;
 	brick bb;
+	wall cc;
+	cc.display();
 	aa.initialize();
 	bb.initialize();
 	bb.read_map();
@@ -13,5 +15,4 @@ void main() {
 		aa.display();
 		aa.move();
 	}
-
 }

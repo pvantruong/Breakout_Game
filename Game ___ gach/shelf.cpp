@@ -1,21 +1,26 @@
 #include "shelf.h"
 
+
+//KHOI TAO TAO DO, 
 void shelf::initialize() {
-	x_l = (X_LEFT + X_RIGHT) - LENGTH_SHELF / 2;
+	x_l = (X_RIGHT - X_LEFT)/2 - LENGTH_SHELF / 2;
 	x_r = x_l + LENGTH_SHELF;
-	y_d = Y_DOWN - WIDTH_SHELF;
+	y_d = Y_DOWN - 1;
 	y_u = y_d -  WIDTH_SHELF;
+	//khoi tao all board = 0
 	for (int i = 0; i < MAX; i++) {
 		for (int j = 0; j < MAX; j++) {
-			BOARD[i][j] = FALSE;
+			BOARD[i][j] = 0;
 		}
 	}
+	//Set board of shelf = 1
 	for (int x = x_l - 1; x <= x_r; x++) {
 		for (int y = y_u; y <= y_d; y++) {
 			BOARD[x][y] = TRUE;
 		}
 	}
 }
+// Func dich chuyen x, y (viet de sau nay add func of moving up down thi de them)
 void shelf::transfer_xy(int a) {
 	x_l += a;
 	x_r += a;
@@ -27,8 +32,8 @@ void shelf::move()
 	switch (type_) {
 		case 'a':
 			for (int i = y_u; i <= y_d; i++) {
-				BOARD[x_r][i] = FALSE;
-				BOARD[x_l - 1][i] = TRUE;
+				BOARD[x_r][i] = 0;
+				BOARD[x_l - 1][i] = 1;
 			}
 			transfer_xy(-1);
 			direct = -1;
@@ -36,16 +41,17 @@ void shelf::move()
 			break;
 		case 'd':
 			for (int i = y_u; i <= y_d; i++) {
-				BOARD[x_r +1][i] = TRUE;
-				BOARD[x_l][i] = FALSE;
+				BOARD[x_r +1][i] = 1;
+				BOARD[x_l][i] = 0;
 			}
 			transfer_xy(1);
 			direct = 1;
 			break;
 	}
 }
-// xl = 11; xr = 16; y_d = 10; y_u = 9;
+//Dispaly shelf 
 void shelf::display() {
+	// Xet direct dich chuyen shelf de cout "_" 
 	if (direct == 1) {
 		for (int x = x_l - 1; x <= x_r; x++) {
 			for (int y = y_u; y <= y_d; y++) {

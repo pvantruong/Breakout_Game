@@ -9,7 +9,7 @@ using namespace std;
 //thu commit
 //######## - DEFINE - #########
 #define X_LEFT 3
-#define X_RIGHT 43
+#define X_RIGHT 73
 #define Y_UP 1
 #define Y_DOWN 21
 #define LENGTH_SHELF 7
@@ -23,7 +23,6 @@ class object {
 protected: 
 	int BOARD[MAX][MAX];
 public:
-
 };
 ///////////////////////////////////////
 
