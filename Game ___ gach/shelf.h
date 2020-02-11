@@ -6,7 +6,7 @@
 #include <math.h>
 #include "kmin_console.h"
 using namespace std;
-
+//thu commit
 //######## - DEFINE - #########
 #define X_LEFT 3
 #define X_RIGHT 43
