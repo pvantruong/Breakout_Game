@@ -53,7 +53,7 @@ void FixConsoleWindow();
 
 void SetWindow();
 
-void Nocursortype();
+void NoCursorType();
 
 void SetWinPos();
 
@@ -72,7 +72,3 @@ void ve_khung(int, int, int, int, const char*);
 void xoa_chuoi(char[], int&, int&);
 
 void chen_chuoi(char a[], int &t, int &vtr, char x);
-
-bool kt_file_chuatontai(char s[]);
-
-bool kt_file_hople(char s[]);

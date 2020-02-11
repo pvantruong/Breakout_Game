@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "primary_Func.h"
+#include "basic_func.h"
 
 void FixConsoleWindow()
 {
@@ -23,7 +23,7 @@ void SetWinPos()
 	SetWindowPos(consoleWindow, 0, 450, 150, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 }
 
-void Nocursortype()
+void NoCursorType()
 {
 	HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO Info;

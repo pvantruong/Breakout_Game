@@ -15,27 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="shelf.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\OneDrive\Máy tính\Console.h\kmin_console.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="brick.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shelf.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func.cpp">
+      <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shelf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\OneDrive\Máy tính\Console.h\kmin_console.h">
+    <ClInclude Include="brick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="brick.h">
+    <ClInclude Include="Ball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_func.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

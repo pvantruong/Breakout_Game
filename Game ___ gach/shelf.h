@@ -1,10 +1,12 @@
 #pragma once
+
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
 #include <iostream>
 #include <math.h>
 #include "kmin_console.h"
+#include "Ball.h"
 using namespace std;
 //thu commit
 //######## - DEFINE - #########
@@ -21,7 +23,7 @@ using namespace std;
 //######## CLASS OBJECT HERE LUN ######
 class object {
 protected: 
-	int BOARD[MAX][MAX];
+	//int BOARD[MAX][MAX];
 public:
 
 };

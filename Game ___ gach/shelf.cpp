@@ -7,12 +7,12 @@ void shelf::initialize() {
 	y_u = y_d -  WIDTH_SHELF;
 	for (int i = 0; i < MAX; i++) {
 		for (int j = 0; j < MAX; j++) {
-			BOARD[i][j] = FALSE;
+			BOARD[i][j] = false;
 		}
 	}
 	for (int x = x_l - 1; x <= x_r; x++) {
 		for (int y = y_u; y <= y_d; y++) {
-			BOARD[x][y] = TRUE;
+			BOARD[x][y] = true;
 		}
 	}
 }
