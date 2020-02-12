@@ -23,6 +23,7 @@ public:
 	bool is_horizon_impact(int next_x, int next_y);		//kiểm tra là va chạm hai bên
 	bool is_vertical_impact(int next_x, int next_y);	//kiểm tra là va chạm trên dưới
 	void handle();
+	void xuli();
 	~Ball();
 };
 

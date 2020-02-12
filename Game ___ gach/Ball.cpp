@@ -55,3 +55,9 @@ void Ball::handle()
 	_x = next_x;
 	_y = next_y;
 }
+
+void Ball::xuli()
+{
+	_x += 2;
+	_y += 1;
+}

@@ -16,6 +16,7 @@ void main() {
 	shelf aa;
 	brick bb;
 	wall cc;
+	Ball ball;
 	cc.display();
 	aa.initialize();
 	bb.initialize();
@@ -41,3 +42,4 @@ void main() {
 		
 	}
 }
+
